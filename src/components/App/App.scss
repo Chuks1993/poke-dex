@@ -1,0 +1,44 @@
+@import '../../assets/scss/';
+
+.app {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/06/18/726639/080349fa8f5651a2d5822cc3def40766.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem;
+
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+
+.poke-logo {
+    height: 15rem;
+    width: 50rem;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchCntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardCntr {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+}

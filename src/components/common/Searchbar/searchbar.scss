@@ -1,0 +1,89 @@
+
+
+
+$color-primary: rgb(255,203,5);
+$color-secondary: rgb(65,113,164);
+
+
+.searchBar {
+
+    flex: 0 0 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: white;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: white;
+            animation: pulse 2s infinite;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color:lightgray;
+        }
+    }
+
+    &__input:focus + &_button {
+        background-color: $color-primary;
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-primary;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: darkgrey;
+    }
+
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 $color-secondary;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 $color-secondary;
+    box-shadow: 0 0 0 0 $color-secondary;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
